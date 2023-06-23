@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Healthy Naari</title>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light h-50 sticky-top">
+        <div class="container">
+            <a class="navbar-brand " href="index.html">
+                <h2 class="fw-bold mb-2 mb-lg-0 mb-sm-0 logo"><img src="Images/Healthy Naari.png" class="rounded-circle" width="50px" height="50px" style="margin-right: 10px;">Healthy Naari</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="bi bi-list"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-lg-5 mb-2 mb-lg-0 list">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shopping.html">Shopping</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Myths and Facts.html">Myths</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="common problems.html">Problems</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Problems
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="common problems.html">Common Problems</a>
+                            <a class="dropdown-item" href="home remedies.html">Home Remedies</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                </ul>
+                <!-- <ul class="navbar-nav mb-2 mb-lg-0 action-menu">
+                    <li class="nav-item">
+                        <a class="nav-link " href="login.html">
+                            <i class="bi bi-person "></i>
+                        </a>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+    </header>
+
+
+    <div class="container login-form mb-4" id="regForm">
+        <div class="row mt-4 justify-content-center">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="offest-md-4">
+                            <h1 class="text-center mt-4 mb-4 fw-bolder">Register</h1>
+
+                            <form action="connect.php" method="post">
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="fname">First Name</label>
+                                    <input type="fname" id="fname" class="form-control" name="fname" placeholder="First Name" />
+                                </div>
+
+                                <div class="form-outline mb-3">
+                                    <label class="form-label" for="lname">Last Name</label>
+                                    <input type="lname" id="lname" class="form-control" name="lname" placeholder="Last name" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <div class="mb-3">
+                                        <label for="male" class="radio-inline mx-2">
+                                            <input type="radio" name="gender" value="m" id="male" />Male</label>
+
+                                        <label for="female" class="radio-inline mx-2">
+                                            <input type="radio" name="gender" value="f" id="female" />Female</label>
+
+                                        <label for="others" class="radio-inline mx-2">
+                                            <input type="radio" name="gender" value="o" id="others" />Others</label>
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label" for="email">Email address</label>
+                                        <input type="email" id="email" class="form-control" name="email" placeholder="Email" />
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label" for="password">Password</label>
+                                        <input type="password" id="password" class="form-control" name="password" placeholder="Password" />
+                                    </div>
+
+                                    <div class="form-outline mb-3">
+                                        <label class="form-label " for="number">Phone Number</label>
+                                        <input type="number" id="number" class="form-control" name="number" placeholder="Phone Number" />
+                                    </div>
+
+                                    <div class="">
+                                        <button type="submit" class="col-12 btn button mb-4 btn-block" style="color: white;">Sign
+                                            Up</button>
+                                    </div>
+                                    <p class="text-center"> Already have account?<a href="login.html" class="" style="color: #FF66C4;">
+                                            Sign in</a></p>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <footer class="text-center text-lg-start bg-light py-3 text-dark">
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h3 class="text-uppercase fw-bold mb-4" style="color: #FF66C4;">
+                            <i class="bi bi-mortarboard-fill me-2"></i>Healthy Naari
+                        </h3>
+                        <p>
+                            Our goal here is to create an awareness about menstrual health that periods are not a burden to get rid of but a gift to be proud of.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="common problems.html" class="text-reset">Common Problems</a>
+                        </p>
+                        <p>
+                            <a href="Myths and Facts.html" class="text-reset">Myths and facts</a>
+                        </p>
+                        <p>
+                            <a href="shopping.html" class="text-reset">Shopping</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About Us</a>
+                        </p>
+                    </div>
+
+                    <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="bi bi-geo-alt-fill me-3"></i> Baby Star Play School, Shantinagar, Samlong , Ranchi-834010</p>
+                        <p>
+                            <i class="bi bi-envelope me-3"></i>harish654@hotmail.com</a>
+                        </p>
+                        <p><i class="bi bi-phone me-3"></i>+91 7171717171</p>
+                        <p><i class="bi bi-print me-3"></i> +91 8181818181</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright
+            <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

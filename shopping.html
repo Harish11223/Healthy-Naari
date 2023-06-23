@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Healthy Naari</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand " href="index.html">
+                    <h2 class="fw-bold mb-2 mb-lg-0 mb-sm-0 logo"><img src="Images/Healthy Naari.png" class="rounded-circle" width="50px" height="50px" style="margin-right: 10px;">Healthy Naari</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping.html">Shopping</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Myths and Facts.html">Myths</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="common problems.html">Problems</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Problems
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="common problems.html">Common Problems</a>
+                                <a class="dropdown-item" href="home remedies.html">Home Remedies</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-lg-2 nav-btns">
+                    <button type="button" class="btn position-relative">
+                            <i class="bi bi-cart-fill"></i>
+                            <span class = "position-absolute top-0 start-100 translate-middle badge items" style="color: white;">5</span>
+                        </button>
+                    <button type="button" class="btn position-relative">
+                            <i class="bi bi-heart-fill"></i>
+                            <span class = "position-absolute top-0 start-100 translate-middle badge items" style="color: white;">2</span>
+                        </button>
+                    <button type="button" class="btn position-relative">
+                            <i class="bi bi-search"></i>
+                        </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container py-5 mt-3 mb-3 rounded" style="background-color: rgb(254, 242, 244)">
+        <div class="row text-center">
+            <div class="col-md-6 mt-auto mb-auto">
+                <h2 class="">The feminine hygiene store.</h2>
+                <!-- <button type="button" class="btn rounded-btn m-2 buy text-uppercase" style="color: white;">Buy Now</button> -->
+                <a href="#collection" class="btn rounded buy mt-3 text-uppercase" style="color: white;">shop now</a>
+            </div>
+            <div class="col-md-6 mt-3 mb-3">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_5ngs2ksb.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-3 mt-5 heading2 text-center">
+        <h2 class="">Women's Personal Hygiene</h2>
+    </div>
+
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="row g-0">
+                    <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group mb-3">
+                        <button type="button" class="btn btn1 m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                        <button type="button" class="btn btn1 m-2 text-dark" data-filter=".pads">Sanitary Pads</button>
+                        <button type="button" class="btn btn1 m-2 text-dark" data-filter=".tampons">Tampons</button>
+                        <button type="button" class="btn btn1 m-2 text-dark" data-filter=".cups">Menstrual Cups</button>
+                        <button type="button" class="btn btn1 m-2 text-dark" data-filter=".liners">Pantry Liners</button>
+                    </div>
+                    <div class="collection-list mt-4 row gx-0 gy-3">
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 pads" id="link">
+                            <a href="product.html">
+                                <span class="link"></span>
+                            </a>
+                            <div class="collection-img position-relative">
+                                <img src="images/stayfree.jpeg" class="w-100 img-size">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">Stayfree Secure Size Xl Sanitary Pads Packet Of 20</p>
+                                <span class="fw-bold"> ₹ 220</span><br>
+                                <!-- <a href="product.html" class="btn rounded buy mt-3 text-uppercase" style="color: white;">shop now</a> -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 pads">
+                            <div class="collection-img position-relative">
+                                <img src="images/pads1.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">SOFY Antibacteria (Super XL Plus) Sanitary Pads (Pack of 30)</p>
+                                <span class="fw-bold"> ₹ 399</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 pads">
+                            <div class="collection-img position-relative">
+                                <img src="images/whisper.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">Whisper Choice Ultra XL Wings Sanitary Pad (Pack of 20)</p>
+                                <span class="fw-bold"> ₹ 135</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 pads">
+                            <div class="collection-img position-relative">
+                                <img src="images/paree.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">Paree Dry Feel XL Sanitary Pads (Pack of 20)</p>
+                                <span class="fw-bold"> ₹ 115</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 tampons">
+                            <div class="collection-img position-relative">
+                                <img src="images/tampons_sirona.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">SIRONA Periods Tampons for Regular Flow Tampons (Pack of 20)</p>
+                                <span class="fw-bold"> ₹ 199</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 tampons">
+                            <div class="collection-img position-relative">
+                                <img src="images/tampons_peesafe.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">Biodegradable Tampons- Super Plus (16 Tampons) | Pee Safe</p>
+                                <span class="fw-bold"> ₹ 219</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 cups">
+                            <div class="collection-img position-relative">
+                                <img src="images/menstrualcup_sirona.jpg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">SIRONA Small Reusable Menstrual Cup (Pack of 1)</p>
+                                <span class="fw-bold"> ₹ 259</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 cups">
+                            <div class="collection-img position-relative">
+                                <img src="images/menstrualcup_plush.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">PLUSH Small Reusable Menstrual Cup (Pack of 1)</p>
+                                <span class="fw-bold"> ₹ 449</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 liners">
+                            <div class="collection-img position-relative">
+                                <img src="images/pantryliners_peesafe.jpg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">Pee Safe Aloe Vera Panty Liners Pantyliner (Pack of 20)</p>
+                                <span class="fw-bold"> ₹ 110</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-xl-3 p-2 liners">
+                            <div class="collection-img position-relative">
+                                <img src="images/pantryliners_plush.jpeg" class="w-100">
+                                <span class="position-absolute sale text-white d-flex align-items-center justify-content-center">sale</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="rating mt-3">
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                    <span class="text star"><i class = "bi bi-star-fill"></i></span>
+                                </div>
+                                <p class="text-capitalize my-1">PLUSH Daily cotton Pantyliner (Pack of 40)</p>
+                                <span class="fw-bold"> ₹ 217</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <footer class="text-center text-lg-start bg-light py-3 text-dark">
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h3 class="text-uppercase fw-bold mb-4" style="color: #FF66C4;">
+                            <i class="bi bi-mortarboard-fill me-2"></i>Healthy Naari
+                        </h3>
+                        <p>
+                            Our goal here is to create an awareness about menstrual health that periods are not a burden to get rid of but a gift to be proud of.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="common problems.html" class="text-reset">Common Problems</a>
+                        </p>
+                        <p>
+                            <a href="Myths and Facts.html" class="text-reset">Myths and facts</a>
+                        </p>
+                        <p>
+                            <a href="shopping.html" class="text-reset">Shopping</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About Us</a>
+                        </p>
+                    </div>
+
+                    <!-- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="bi bi-geo-alt-fill me-3"></i> Baby Star Play School, Shantinagar, Samlong , Ranchi-834010</p>
+                        <p>
+                            <i class="bi bi-envelope me-3"></i>harish654@hotmail.com</a>
+                        </p>
+                        <p><i class="bi bi-phone me-3"></i>+91 7171717171</p>
+                        <p><i class="bi bi-print me-3"></i> +91 8181818181</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright
+            <!-- <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a> -->
+        </div>
+    </footer>
+
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+</body>
+
+</html>
